@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="content">
+      <div class="content__wrapper">
+        <h1>Here you can plot a route by entering two addresses</h1>
+        <label for="address__one"> Enter first address: </label>
+        <input
+          class="content__start"
+          type="text"
+          name="address__one"
+          id="address__one"
+        />
+
+        <label for="address__two"> Enter second address: </label>
+        <input
+          class="content__end"
+          type="text"
+          name="address__two"
+          id="address__two"
+        />
+        <input class="content__calc" type="submit" value="Calculate" />
+        <div class="content__map" id="map"></div>
+      </div>
+    </section>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?sensor=falsekey=AIzaSyDSVukM0_65OyBIsIqDX_z5LUiKVDXZ0Ms&callback=initMap"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
