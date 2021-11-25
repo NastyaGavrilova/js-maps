@@ -2,7 +2,7 @@ function initMap() {
   const markerArray = [];
   // Instantiate a directions service.
   const directionsService = new google.maps.DirectionsService();
-  // Create a map and center it on Kiev,Poznyaki.
+  // Create a map and center it on Manhattan.
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
     center: { lat: 50.4080243, lng: 30.629657 },
